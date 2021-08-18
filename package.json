@@ -1,0 +1,22 @@
+{
+  "name": "concurrent-http-server",
+  "version": "1.0.0",
+  "description": "HTTP server for concurrent-http RxJS demo.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "concurrent-http",
+    "demo",
+    "server"
+  ],
+  "author": "Mark Deazley",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "directory-tree": "^2.3.1",
+    "express": "^4.17.1"
+  }
+}

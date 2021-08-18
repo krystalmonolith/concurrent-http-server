@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "ed2a76f7-eab5-4b12-bd82-38cbad3eff33",
+		"name": "concurrent-http-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "filelist & file",
+			"description": "",
+			"item": [
+				{
+					"name": "GET /filelist",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filelist",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filelist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /file/:filename",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/file/{{small_filename}}",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"file",
+								"{{small_filename}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "filedelaymsec",
+			"description": "",
+			"item": [
+				{
+					"name": "GET /filedelaymsec",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filedelaymsec",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filedelaymsec"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filedelaymsec/:delay 0 msec",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filedelaymsec/0",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filedelaymsec",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filedelaymsec/:delay 50 msec",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filedelaymsec/50",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filedelaymsec",
+								"50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filedelaymsec/:delay 100 msec",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filedelaymsec/100",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filedelaymsec",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filedelaymsec/:delay foo msec",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filedelaymsec/foo",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filedelaymsec",
+								"foo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "filefailpercent",
+			"description": "",
+			"item": [
+				{
+					"name": "GET /filefailpercent",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filefailpercent",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filefailpercent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filefailpercent/:percent 0%",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filefailpercent/0",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filefailpercent",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filefailpercent/:percent 50%",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filefailpercent/50",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filefailpercent",
+								"50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filefailpercent/:percent 90%",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filefailpercent/90",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filefailpercent",
+								"90"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filefailpercent/:percent 100%",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filefailpercent/100",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filefailpercent",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filefailpercent/:percent 110%",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filefailpercent/110",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filefailpercent",
+								"110"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filefailpercent/:percent -10%",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filefailpercent/-10",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filefailpercent",
+								"-10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /filefailpercent/:percent foo%",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{host}}:{{restport}}/filefailpercent/foo",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{restport}}",
+							"path": [
+								"filefailpercent",
+								"foo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
