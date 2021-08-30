@@ -3,6 +3,8 @@
 // URL: https://www.section.io/engineering-education/building-a-basic-api-with-nodejs/
 //
 
+const version = '1.1';
+
 const port = 3000
 const filesPath = './testimages/100x100/16BIT/RED_GREEN_BLUE/';
 
@@ -67,6 +69,10 @@ app.get('/filelist', (req, res) => {
 
 app.get('/file/:filename', (req, res) => {
     sendAFile(req, res);
+});
+
+app.get('/version', (req, res) => {
+    res.json({version: version});
 });
 
 app.listen(port, () => {
