@@ -3,7 +3,7 @@
 // URL: https://www.section.io/engineering-education/building-a-basic-api-with-nodejs/
 //
 
-const version = '1.1';
+const version = '1.2.0';
 
 const port = 3000
 const filesPath = './testimages/100x100/16BIT/RED_GREEN_BLUE/';
