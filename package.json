@@ -18,5 +18,8 @@
     "cors": "^2.8.5",
     "directory-tree": "^2.3.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "oss-attribution-generator": "^1.7.1"
   }
 }
