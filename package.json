@@ -13,7 +13,7 @@
     "server"
   ],
   "author": "Mark Deazley",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "directory-tree": "^2.3.1",
